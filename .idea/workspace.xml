@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a95377f-24f0-4278-a2c2-a1d0e63a2a3b" name="Changes" comment="" />
+    <list default="true" id="9a95377f-24f0-4278-a2c2-a1d0e63a2a3b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopproject/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shopproject/shopapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopproject/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shopproject/shopapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopproject/shopproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shopproject/shopproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopproject/shopproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shopproject/shopproject/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,7 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "brv1",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
