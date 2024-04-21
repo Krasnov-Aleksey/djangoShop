@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a95377f-24f0-4278-a2c2-a1d0e63a2a3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/shopproject/shopapp/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shopproject/shopapp/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shopproject/shopapp/management/commands/fake_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopproject/shopapp/management/commands/delete_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopproject/shopapp/management/commands/get_client_all.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopproject/shopapp/management/commands/update_client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/shopproject/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopproject/shopapp/management/commands/fake_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/shopproject/shopapp/management/commands/fake_data_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopproject/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shopproject/shopapp/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
