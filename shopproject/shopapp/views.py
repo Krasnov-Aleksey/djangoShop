@@ -3,4 +3,8 @@ from django.http import HttpResponse
 
 
 def index(response):
-    return HttpResponse('<h1>Домашняя работа магазин</h1>')
+    return render(response, 'shopapp/index.html')
+
+
+def client_all(response):
+    return render(response, 'shopapp/client_all.html')
