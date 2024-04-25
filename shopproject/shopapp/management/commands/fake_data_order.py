@@ -1,6 +1,6 @@
 from django.core.management import BaseCommand
-from shopapp.models import Product
-from random import randint, uniform
+from shopapp.models import Order
+from random import randint
 from decimal import Decimal
 
 
