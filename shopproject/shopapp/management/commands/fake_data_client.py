@@ -14,3 +14,5 @@ class Command(BaseCommand):
                             registration_date_client='2024-04-20')
         new_client.save()
         self.stdout.write(f'{new_client} creation')
+
+
