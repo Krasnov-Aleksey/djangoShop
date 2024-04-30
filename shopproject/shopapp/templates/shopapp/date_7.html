@@ -1,0 +1,12 @@
+{% extends 'shopapp/base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+
+<h1>Список заказов за последние 7 дней</h1>
+
+{% for key, values in client_dict.items %}
+<h4>{{ key.name_client }}</h4>
+<p>{{ values }}</p>
+{% endfor %}
+
+{% endblock %}

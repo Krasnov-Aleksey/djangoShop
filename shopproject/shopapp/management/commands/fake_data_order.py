@@ -1,18 +1,17 @@
 from django.core.management import BaseCommand
-from shopapp.models import Order
-from random import randint
-from decimal import Decimal
+from shopapp.models import Order, Client, Product
 
 
 class Command(BaseCommand):
-    help = 'Create product'
+    help = 'Create order'
 
     def handle(self, *args, **kwargs):
-        num = randint(1, 1000)
-        num2 = Decimal(f'{num}.15')
-        num3 = Decimal(f'{num}.002')
-        new_product = Product(name_product=f'product{num}', description_product=f'description_product{num}',
-                              price_product=f'{num2}', quantity_product=f'{num3}',
-                              added_date_product='2024-04-25')
-        new_product.save()
-        self.stdout.write(f'{new_product} creation')
+        client = Client.objects.get(id=18)
+        order = Order(client=client, total_price=f'{10}')
+        order.save()
+        product = Product.objects.get(id=3)
+        order.products.add(product)
+        product = Product.objects.get(id=6)
+        order.products.add(product)
+        product = Product.objects.get(id=9)
+        order.products.add(product)

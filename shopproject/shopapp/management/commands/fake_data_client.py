@@ -9,9 +9,9 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         num = randint(1, 1000)
         phone = randint(1, 10000000000)
-        new_client = Client(name_client=f'Alex{num}', email=f'Alex{num}@m.ru',
+        new_client = Client(name_client=f'Svet{num}', email=f'Svet{num}@m.ru',
                             number_phone=f'{phone}', address=f'City-{num}',
-                            registration_date_client='2024-04-20')
+                            registration_date_client='2023-04-30')
         new_client.save()
         self.stdout.write(f'{new_client} creation')
 

@@ -1,0 +1,13 @@
+{% extends 'shopapp/base.html' %}
+{% block title %}Клиент {{ client.name_client }} {% endblock %}
+{% block content %}
+<h2>Все заказы пользователя: {{ client.name_client }}</h2>
+{% for key, values in order_dict.items %}
+<h3> Заказ № {{ key.id }}</h3>
+    {% for value in values %}
+    <p>{{ value.name_product }}</p>
+    {% endfor %}
+{% endfor %}
+
+{% endblock %}
+

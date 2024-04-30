@@ -2,4 +2,7 @@
 {% block title %}Все клиенты{% endblock %}
 {% block content %}
 <h1>Список всех клиентов</h1>
+{% for client in clients %}
+<a href="{% url 'client_order_id' client.id %}">{{ client.name_client }}</a><br>
+{% endfor %}
 {% endblock %}
