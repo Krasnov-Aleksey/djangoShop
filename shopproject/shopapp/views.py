@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
-from .models import Client, Order
+from .models import Client, Order, Product
+from .forms import ProductForm
 from datetime import datetime, timedelta
 
 
@@ -76,3 +77,24 @@ def date_365(request, date=365):
                 product_list.append(product.name_product)
         client_dict[client] = set(product_list)
     return render(request, 'shopapp/date_7.html', {'title': title, 'client_dict': client_dict})
+
+
+def product_form(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST)
+        if form.is_valid():
+            product_selection = form.cleaned_data['product_selection']
+            description_product = form.cleaned_data['description_product']
+            price_product = form.cleaned_data['price_product']
+            quantity_product = form.cleaned_data['quantity_product']
+            added_date_product = form.cleaned_data['added_date_product']
+            select_product = Product.objects.get(name_product=product_selection.name_product)
+            select_product.description_product = description_product
+            select_product.price_product = price_product
+            select_product.quantity_product = quantity_product
+            select_product.added_date_product = added_date_product
+            select_product.save()
+    else:
+        form = ProductForm()
+
+    return render(request, 'shopapp/product_form.html', {'form': form})
