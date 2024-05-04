@@ -9,4 +9,5 @@ urlpatterns = [
     path('data_30/', views.date_30, name='date_30'),
     path('data_365/', views.date_365, name='date_365'),
     path('product_form/', views.product_form, name='product_form'),
+    path('upload_photo/', views.upload_photo, name='upload_photo'),
 ]

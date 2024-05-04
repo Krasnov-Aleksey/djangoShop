@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from .models import Client, Order, Product
-from .forms import ProductForm
+from .forms import ProductForm, UploadPhoto
 from datetime import datetime, timedelta
+from django.core.files.storage import FileSystemStorage
 
 
 def index(request):
@@ -98,3 +99,15 @@ def product_form(request):
         form = ProductForm()
 
     return render(request, 'shopapp/product_form.html', {'form': form})
+
+
+def upload_photo(request):
+    if request.method == 'POST':
+        form = UploadPhoto(request.POST, request.FILES)
+        if form.is_valid():
+            photo = form.cleaned_data['photo']
+            fs = FileSystemStorage()
+            fs.save(photo.name, photo)
+    else:
+        form = UploadPhoto()
+    return render(request, 'shopapp/upload_photo.html', {'form': form})
