@@ -25,11 +25,12 @@ SECRET_KEY = 'django-insecure-epq+vl7pi3o34o(p2k2_aquc7vg^wl*3mx3q$_h8&uoftvegr%
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'djangoshop111.pythonanywhere.com'
+    '127.0.0.1',
+    'djangoshop111.pythonanywhere.com',
 ]
 
 INTERNAL_IPS = [
-    '127.0.0.1',
+
 ]
 
 # Application definition
