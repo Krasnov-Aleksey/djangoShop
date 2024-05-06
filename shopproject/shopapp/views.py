@@ -82,18 +82,20 @@ def date_365(request, date=365):
 
 def product_form(request):
     if request.method == 'POST':
-        form = ProductForm(request.POST)
+        form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product_selection = form.cleaned_data['product_selection']
             description_product = form.cleaned_data['description_product']
             price_product = form.cleaned_data['price_product']
             quantity_product = form.cleaned_data['quantity_product']
             added_date_product = form.cleaned_data['added_date_product']
+            img_product = form.cleaned_data['img_product']
             select_product = Product.objects.get(name_product=product_selection.name_product)
             select_product.description_product = description_product
             select_product.price_product = price_product
             select_product.quantity_product = quantity_product
             select_product.added_date_product = added_date_product
+            select_product.img_product = img_product
             select_product.save()
     else:
         form = ProductForm()
